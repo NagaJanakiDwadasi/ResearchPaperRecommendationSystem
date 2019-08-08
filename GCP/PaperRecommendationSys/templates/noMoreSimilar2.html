@@ -1,0 +1,60 @@
+{% extends "bootstrap/base.html" %}
+
+ {% block content %}
+
+<head>
+    <title> Similar Papers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+            <p class="h2">
+           Similar Papers...
+          </p>
+          </div> <!-- div for input-group for title -->
+          <br>
+        </div> <!-- div for col-lg-8 for title -->
+      </div> <!-- div for row for title -->
+
+    <div id="todo-table">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+              <img src="../static/css/header.png" class="img-fluid img-responsive" alt="Responsive image">
+              <h3 class="alert-heading">No similar papers found for your search</h3>
+            </div> <!-- div for input-group for title -->
+          <br>
+        </div> <!-- div for col-lg-8 for title -->
+      </div> <!-- div for row for title -->
+    </div> <!-- div for todo-table -->
+    </div> <!-- div for input-group for title -->
+      </div> <!-- div for row for title -->
+
+  <div class="row">
+          <div class="row force-to-bottom text-center">
+            <div class="col-xs-12">
+            <p class="h4" style="color:green;">
+                <a href="{{ url_for('search') }}">Home</a>
+            </p>
+           </div>
+          </div> <!-- div for input-group for title -->
+          <br>
+      </div> <!-- div for row for title -->
+
+  </body>
+
+ {% endblock %}
+
+ {% block scripts %}
+
+ {{ super() }}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ {% endblock %}

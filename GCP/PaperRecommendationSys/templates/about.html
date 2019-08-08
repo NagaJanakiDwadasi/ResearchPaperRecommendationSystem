@@ -1,0 +1,77 @@
+{% extends "bootstrap/base.html" %}
+
+ {% block content %}
+
+<head>
+    <title> Paper Recommendation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <div id="todo-table">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+              <img src="../static/css/header.png" class="img-fluid img-responsive" alt="Responsive image">
+            </div> <!-- div for input-group for title -->
+          <br>
+        </div> <!-- div for col-lg-8 for title -->
+      </div> <!-- div for row for title -->
+
+
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+            <p class="h2">
+            About Paper Recommendation System
+          </p>
+          </div> <!-- div for input-group for title -->
+          <br>
+        </div> <!-- div for col-lg-8 for title -->
+      </div> <!-- div for row for title -->
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+            <div class="alert alert-success" role="alert">
+              <h4 class="alert-heading">About project:</h4>
+              <p>Recommending research papers to researchers by finding similar papers based on content similarity, popularity metrics and collaborative filtering. </p> <br>
+              <hr>
+              <p class="mb-0">Project guidance : Prof. Shih Yu Chang</p>
+              <hr>
+              <h4 class="alert-heading">Team Members</h4>
+              <ul class="list-group">
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/abhinav-balasubramanian/" target="_blank">Abhinav Balasubramanian</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/akshata-kulkarni-a9145b62/" target="_blank">Akshata Kulkarni</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/manish-k-967a73183" target="_blank">Manish Katturu</a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/in/naga-janaki-dwadasi/" target="_blank">Naga Janaki Dwadasi</a></li>
+              </ul>
+                <hr>
+            </div>
+          </div> <!-- div for col-lg-8 in suggestions -->
+        </div> <!-- div for row in suggestions -->
+    </div> <!-- div for todo-table -->
+
+  <div class="row">
+          <div class="row force-to-bottom text-center">
+            <div class="col-xs-12">
+            <p class="h4" style="color:green;">
+                <a href="{{ url_for('search') }}">Home</a>
+            </p>
+           </div>
+          </div> <!-- div for input-group for title -->
+          <br>
+      </div> <!-- div for row for title -->
+
+  </body>
+
+ {% endblock %}
+
+ {% block scripts %}
+
+ {{ super() }}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ {% endblock %}

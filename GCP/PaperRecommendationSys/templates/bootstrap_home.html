@@ -1,0 +1,85 @@
+{% extends "bootstrap/base.html" %}
+
+ {% block content %}
+
+<head>
+    <title> Paper Recommendation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <div id="todo-table">
+      <form action="https://paper-recommendation-system.appspot.com/process">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+              <img src="../static/css/header.png" class="img-fluid img-responsive" alt="Responsive image">
+            </div> <!-- div for input-group for title -->
+          <br>
+        </div> <!-- div for col-lg-8 for title -->
+      </div> <!-- div for row for title -->
+
+
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+            <p class="h2">
+            Paper Recommendation System
+          </p>
+          </div> <!-- div for input-group for title -->
+          <br>
+        </div> <!-- div for col-lg-8 for title -->
+      </div> <!-- div for row for title -->
+
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+              <div class="input-group-lg">
+              <input type="text" class="form-control input-lg" name="query" id="query" placeholder="Enter domain/title of the paper...."required />
+              <span class="input-group-btn">
+                  <button type="submit" class='btn btn-success btn-lg btn-block'> Search </button>
+              </span>
+            </div> <!-- div for input-group -->
+            <br>
+          </div> <!-- div for col-lg-8 -->
+        </div> <!-- div for row -->
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+              <div class="input-group">
+                <ul class="list-inline">
+                  Available domains:
+                     <li>Machine Learning |</li>
+                     <li>Block Chain | </li>
+                     <li>Internet Of Things | </li>
+                     <li>Cloud Computing | </li>
+                </ul>
+            </div> <!-- div for input-group in suggestions-->
+          </div> <!-- div for col-lg-8 in suggestions -->
+        </div> <!-- div for row in suggestions -->
+      </form> <!-- end form -->
+    </div> <!-- div for todo-table -->
+
+  <div class="row">
+          <div class="row force-to-bottom text-center">
+            <div class="col-xs-12">
+            <p class="h4" style="color:green;">
+                <a href="{{ url_for('about') }}">About</a>
+            </p>
+           </div>
+          </div> <!-- div for input-group for title -->
+          <br>
+      </div> <!-- div for row for title -->
+
+  </body>
+
+ {% endblock %}
+
+ {% block scripts %}
+
+ {{ super() }}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ {% endblock %}
