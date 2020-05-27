@@ -11,6 +11,8 @@ A hybrid model with the following approaches is created.
 1. Content-based filtering
 2. Collaborative filtering
 
+![architecture](images/architecture.png)
+
 
 ### Evaluation:
 1. Discounted Cummulative Gain
