@@ -2,7 +2,7 @@ gunicorn==19.6.0
 Flask==1.1.1
 Flask-Babel==0.12.2
 Flask-Table==0.5.0
-numpy==1.16.4
+numpy==1.22.0
 pandas==0.24.2
 nltk==3.4.4
 scikit-learn==0.21.2
